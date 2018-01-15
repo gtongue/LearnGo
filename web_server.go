@@ -6,9 +6,10 @@ import (
 )
 
 func index_handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<h1>Hey</h1>")
-	fmt.Fprintf(w, "<h2>World</h2>")
-	fmt.Fprintf(w, "<h3>Wassup</h3>")
+	fmt.Fprintf(w, `
+		<h1>Hey</h1>
+		<h2>World</h2>
+		`)
 	fmt.Fprintf(w, "<p>This %s is using %s</p>", "program", "variables")
 }
 
